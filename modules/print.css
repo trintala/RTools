@@ -1,0 +1,24 @@
+div.rt_errors, div.rt_running
+{
+	display: none;
+}
+
+#siteSub, #contentSub
+{
+	display: none;
+}
+
+.rtools_code_show_hide_links
+{
+	display: none;
+}
+
+#footer, .printfooter
+{
+	display: none;
+}
+
+.rt_footer
+{
+	display: none;
+}

@@ -1,0 +1,101 @@
+<?php
+
+$magicWords = array();
+ 
+$magicWords['en'] = array(
+   'opasnet_base_link' => array( 0, 'opasnet_base_link' ),
+);
+
+$magicWords['fi'] = array(
+   'opasnet_base_link' => array( 0, 'opasnet_base_link' ),
+);
+
+$messages = array();
+ 
+$messages['en'] = array( 
+	'rtools' => 'R-tools',
+	'date_format' => '%Y-%m-%d %H:%M:%S',
+	'error_selecting_database' => 'Could not select database',
+	'error_session_id_taken' => 'Error! Session id already in use',
+	'error_cannot_create_file' => 'Error! File could not be created',
+	'error_cannot_write_file' => 'Error! File could not be written',
+	'error_session_not_found' => 'Session not found',
+	'error_invalid_code' => 'Error! Invalid code',
+	'error_rtools_user_not_logged_in' => 'You must log in first!',
+	'error_all_variables_must_have_names' => 'All variables must have names!',
+	'text_sort_by_indices' => 'Sort by indices',
+	'text_run_code' => 'Run code',
+	'text_running' => 'Running',
+	'text_no_jscript' => 'Your browser has javascript disabled. Refresh page manually!',
+	'text_starting_r_process' => 'Starting the R process...',
+	'text_forbidden_function_found' => 'Forbidden function found',
+	'text_show_code' => '+ Show code',
+	'text_hide_code' => '- Hide code',
+	'text_show_errors' => '+ Show messages and errors',
+	'text_hide_errors' => '- Hide messages and errors',
+	'text_pending' => 'Run pending...',
+	'text_cancel_run' => 'Cancel run',
+	'text_run_completed_in' => 'Run completed in',
+	'text_run_job_canceled' => 'Run canceled',
+	'text_run_job_timeout' => 'Run timeout',
+	'text_run_job_deleted' => 'Run has been removed',
+	'text_ran_at' => 'Ran at',
+	'text_delete_run' => 'Remove this run',
+	'text_delete_run_confirmation' => 'Are you sure to delete run results and plots from the server?',
+	'text_cancel' => 'Cancel',
+	'text_paste_table_here' => '- paste table here -',
+	'msg_prohibited_html_in_code' => 'Prohibited HTML found in code',
+	'msg_server_error' => 'R-tools server error',
+	'msg_invalid_code' => 'Invalid code',
+	'msg_cannot_create_file' => 'Cannot create file',
+	'msg_cannot_write_file' => 'Cannot write file',
+	'msg_authentication_failed' => 'Authentication failed',
+	'msg_pending_job_queue_full' => 'Job queue full! Try again later.',
+	'msg_only_authenticated_users_can_delete_runs' => 'Only authenticated users can delete runs',
+	'msg_only_run_executor_can_cancel_run' => 'Only the run executor can cancel a run',
+	'msg_only_run_executor_can_delete_run' => 'Only the run executor can delete a run'		
+);
+$messages['fi'] = array( 
+	'rtools' => 'R-tools',
+	'date_format' => '%d.%m.%Y %H:%M:%S',
+	'error_selecting_database' => 'Tietokantaa ei voitu valita',
+	'error_session_id_taken' => 'Virhe! Istunnon id on jo käytössä',
+	'error_cannot_create_file' => 'Virhe! Tiedostoa ei voitu luoda',
+	'error_cannot_write_file' => 'Virhe! Tiedostoa ei voitu kirjoittaa',
+	'error_session_not_found' => 'Istuntoa ei löytynyt',
+	'error_invalid_code' => 'Virhe! Koodi ei ole kelvollinen',
+	'error_rtools_user_not_logged_in' => 'Kirjaudu ensin sisään!',
+	'error_all_variables_must_have_names' => 'Kaikilla muuttujilla on oltava nimet!',
+	'text_sort_by_indices' => 'Järjestä indeksien mukaan',
+	'text_run_code' => 'Aja koodi',
+	'text_running' => 'Koodia ajetaan',
+	'text_no_jscript' => 'Selaimesi javascript ei ole toiminnassa. Päivitä sivu manualisesti!',
+	'text_starting_r_process' => 'Käynnistetään R-prosessia...',
+	'text_forbidden_function_found' => 'Kielletty funktio löydetty',
+	'text_show_code' => '+ Näytä koodi',
+	'text_hide_code' => '- Piilota koodi',
+	'text_pending' => 'Odotetaan ajoa...',
+	'text_cancel_run' => 'Peruuta ajo',
+	'text_run_completed_in' => 'Ajo suoritettu ajassa',
+	'text_run_job_canceled' => 'Ajo peruutettu',
+	'text_run_job_timeout' => 'Ajo keskeytetty, aikaraja ylitetty',
+	'text_run_job_deleted' => 'Ajo on poistettu',
+	'text_show_errors' => '+ Näytä viestit ja virheet',
+	'text_hide_errors' => '- Piilota viestit ja virheet',
+	'text_ran_at' => 'Ajettu',
+	'text_delete_run' => 'Poista ajo',
+	'text_delete_run_confirmation' => 'Oletko varma, että haluat poistaa ajon tulokset ja graafit palvelimelta?',
+	'text_cancel' => 'Peruuta',
+	'text_paste_table_here' => '- liitä taulukko tähän -',
+	'msg_prohibited_html_in_code' => 'Kiellettyä HTML:ää koodissa',
+	'msg_server_error' => 'R-tools palvelinvirhe',
+	'msg_invalid_code' => 'Invalidi koodi',
+	'msg_cannot_create_file' => 'Tiedostoa ei voitu luoda',
+	'msg_cannot_write_file' => 'Tiedostoon ei voitu kirjoittaa',
+	'msg_authentication_failed' => 'Tunnistautuminen ei onnistunut',
+	'msg_pending_job_queue_full' => 'Työjono on täynnä! Kokeile uudelleen myöhemmin.',
+	'msg_only_authenticated_users_can_delete_runs' => 'Vain kirjautuneet käyttäjät voivat poistaa ajoja',
+	'msg_only_run_executor_can_cancel_run' => 'Vain ajon suorittaja voi keskeyttää ajon',
+	'msg_only_run_executor_can_delete_run' => 'Vain ajon suorittaja voi poistaa ajon'
+);
+?>

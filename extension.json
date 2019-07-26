@@ -1,0 +1,63 @@
+{
+	"name": "RTools",
+	"version": "0.0.6",
+	"author": [
+		"Einari Happonen",
+		"Teemu Rintala"
+	],
+	"url": "http://en.opasnet.org/w/R-tools",
+	"descriptionmsg": "rtools_desc",
+	"license-name": "MIT",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"RToolsAlias": "RTools.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialRTools": "RTools_body.php",
+		"RToolsParser": "RToolsParser.php",
+		"RToolsClient": "lib/rtools_client.class.php"
+	},
+	"SpecialPages": {
+		"RTools": "SpecialRTools"
+	},
+	"MessagesDirs": {
+		"RTools": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.RTools.parser": {
+			"position": "top",
+			"scripts": "modules/parser.js",
+			"styles": "modules/screen.css"
+		},
+		"ext.RTools": {
+			"position": "top",
+			"scripts": "modules/index.jquery.js",
+			"styles": {
+				"modules/screen.css": {
+					"media": "screen"
+				},
+				"modules/print.css": {
+					"media": "print"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "RTools"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates":[
+			"RToolsParser::onDatabaseUpdate"
+		],
+		"ParserFirstCallInit": [
+			"RToolsParser::efRCodeParserInit"
+		],
+		"ParserAfterTidy": [
+			"RToolsParser::efRCodeParserAfterTidy"
+		]
+	},
+	"manifest_version": 1
+}
